@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proverbium</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Sacramento&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poetsen+One&family=Sacramento&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section-->
+    <header>
+        <h1>Proverbium</h1>
+        <p>"Where silence speaks"</p>
+        <div>
+            <nav>
+                <a href="#home">Home</a>
+                <a href="gallery.html">Proverb Gallary</a>
+                <a href="#day">Proverb of the Day</a>
+                <a href="wall.html">Interactive Wall</a>
+                <a href="#about">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Welcome Section-->
+    <section id="home">
+        <div class="home_container">
+            <h2>Welcome to Proverbium</h2>
+            <p>Proverbium collects the world's wisdom, one saying at a time. These are short sayings packed with wisdom that Afghans use in their everyday conversations. They function much like proverbs in other cultures, offering guidance and insight into various life experiences.</p>
+            <input type="search" placeholder="Search the Keyword of proverb...">
+        </div>
+    </section>
+
+    <section>
+        <h2>Featured Proverbs</h2>
+            <div class="cards-container">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>Even on a mountain, there is still a road.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p><b>Meaning:</b> This proverb suggests that no matter how difficult or challenging a situation is, there is always a way to overcome it.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <p>When the water reaches the upper lip, learn to swim.</p>
+                        </div>
+                        <div class="flip-card-back">
+                            <p><b>Meaning:</b> It implies that it's best to take action when a problem becomes serious. It emphasizes the importance of not waiting until the last minute to deal with a difficult situation.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <!-- Gallary Section-->
+    <section id="gallary">
+        <div>
+            <h2>Proverb Gallary</h2>
+            <div class="gallary_container">
+                <p>
+                    A Bird Will Always Use Another Bird's Feathers to Feather its Own Nest.
+                </p>
+                <p  style="font-family:'Vazirmatn', sans-serif;">پرنده همیشه از پرهای پرنده‌ی دیگر استفاده می‌کند تا لانه‌ی خودش را بسازد</p>
+                <a href="gallery.html">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Day Section-->
+    <section id="day">
+    <div class="day_container">
+        <h3>Proverb of the Day</h3>
+        <div class="proverb_box">
+            <p>
+                A Real Friend is One Who Takes the Hand of His Friend in Times of Distress and Helplessness.
+            </p>
+            <div class="proverb_expl">
+                This Afghan proverb captures the essence of true friendship during difficult times. It emphasizes that true friendship goes beyond good times and shared experiences. It highlights the importance of loyalty and support during challenging moments.
+            </div>
+        </div>
+    </div>
+    </section>
+
+
+    <!-- About Section-->
+    <section id="about">
+        <div  class="about_container">
+            <h5>About Proverbium</h5>
+            <p>Proverbium is also known as “Zarbul Masalha” in Dari. These are short sayings packed with wisdom that Afghans use in their everyday conversations. They function much like proverbs in other cultures, offering guidance and insight into various life experiences.</p>
+            <div>
+                <h5>Contact Us</h5><br>
+                <a class="fa fa-instagram  contact" href="http://instagram.com" style="text-decoration: none; color: #c0273b;"> Instagram</a><br><br>
+                <a class="fa fa-linkedin  contact" href="https://www.linkedin.com/in/parvaneh-yaghoubi-54362620b" style="text-decoration: none; color: #c0273b;"> LinkedIn</a><br><br>
+                <a class="fa fa-github  contact" href="https://github.com/parvanehyaghoubi" style="text-decoration: none; color: #c0273b;"> GitHub</a><br><br>
+                <a class="fa fa-envelope  contact" href="mailto:parvaneh.yaghoubi77@gmail.com" style="text-decoration: none; color: #c0273b;"> Email</a>
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- Footer Section-->
+    <footer style="margin-top: 50px;" class="footer">
+        <P>© 2025 <span style="color: #e482d7;">Proverbium</span> | All rights Reserved. Designed by <a href="https://github.com/parvanehyaghoubi" style="text-decoration: none;"><span style="color: #e482d7;">Parvaneh Yaghoubi</span></a>.</P>
+    </footer>
+
+</body>
+
+    <script>
+    const cards = document.querySelectorAll('.flip-card');
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+        card.classList.toggle('flipped');
+        });
+    });
+    </script>
+
+
+</html>
