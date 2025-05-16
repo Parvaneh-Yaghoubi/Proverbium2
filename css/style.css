@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body {
+    background-color: #f9f9f9;
+    font-family: "Chau Philomene One", sans-serif;
+}
+
+header h1{
+    background-color: #c0273b;
+    color: #EFF0D1;
+    text-align: center;
+    padding: 0.7rem;
+}
+header p {
+    background-color: #c0273b;
+    color: #EFF0D1;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+nav{
+    background-color: #fce1e8;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 10px;
+    justify-content: center;
+}
+nav a {
+    text-decoration: none;
+    flex-wrap: wrap;
+    font-weight: bold;
+    color: #cb3360;
+}
+.home_container h2 {
+    color: #161612;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+.home_container {
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+.home_container p {
+    color: #161612;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.home_container input{
+    border: solid 3px #800000;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    align-items: center;
+    border-radius: 10px;
+}
+section h2 {
+    color: #161612;
+    padding: 20px;
+    text-align: left;
+    margin-top: 30px;
+}
+.gallary_container {
+    background: linear-gradient(#f2e8c6, #f39ce5) padding-box,
+                linear-gradient(135deg, #ffffff, #c0273b) border-box;
+    background-color: #F8EDE3;
+    display: grid;
+    grid-template-columns: 1fr;
+    border: solid 3px transparent;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 50px;
+}
+.gallary_container p {
+    padding: 0.8rem;
+}
+.gallary_container a {
+    border: solid 3px #800000;
+    border-radius: 10px;
+    place-items: center;
+    justify-self: center;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #800000;
+    color: #fce1e8;
+    text-align: center;
+    padding-top: 0.3rem;
+}
+a:hover {
+  transform: scale(1.1);
+}
+.wall_container {
+    background: linear-gradient(#f2e8c6, #f39ce5) padding-box,
+                linear-gradient(135deg, #ffffff, #c0273b) border-box;
+    border: solid 4px transparent;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    place-content: center;
+    place-self: center;
+    width: 350px;
+    height: 300px;
+    margin-top: 60px;
+}
+h4 {
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.wall_container input {
+    border: solid 3px #800000;
+    margin: 10px;
+    width: 300px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.wall_container textarea {
+    border: solid 3px #800000;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.wall_container button{
+    border: solid 3px #800000;
+    background-color: #800000;
+    color: #fce1e8;
+    margin: 10px;
+    width: 315px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.about_container {
+    padding: 20px;
+    color: #161612;
+}
+.about_container h5{
+    font-size: medium;
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+.footer {
+    margin-top: 100px;
+    background-color: #c0273b;
+    color: #EFF0D1;
+    text-align: center;
+    justify-content: center;
+    padding: 0.8rem; 
+}
+.cards-container {
+    display: flex;
+    flex: 1 1 300px;
+    flex-wrap: wrap;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+.flip-card {
+    width: 500px;
+    height: 100px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #161612	;
+    padding: 20px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.flip-card-front {
+    background: linear-gradient(#f2e8c6, #f39ce5) padding-box,
+                linear-gradient(135deg, #ffffff, #c0273b) border-box;
+    border: solid 3px transparent;
+    background-color: #F8EDE3;
+}
+
+.flip-card-back {
+    background: linear-gradient(#f2e8c6, #f39ce5) padding-box,
+                linear-gradient(135deg, #c0273b, #ffffff) border-box;
+    border: solid 3px transparent;
+    background-color: #F8EDE3;
+    transform: rotateY(180deg);
+}
+html {
+    scroll-behavior: smooth;
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+@media screen and (min-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.image-container {
+    background: linear-gradient(#f2e8c6, #f39ce5) padding-box,
+                linear-gradient(135deg, #c0273b, #ffffff) border-box;
+    border: solid 4px transparent;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    justify-items: center;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.5s ease;
+    border-radius: 10px;
+    justify-items: center;
+}
+
+.image-container:hover img {
+    transform: scale(1.05);
+}
+
+.hover-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #EFF0D1;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    justify-items: center;
+    place-items: center;
+}
+
+.image-container:hover .hover-text {
+    opacity: 1;
+    justify-items: center;
+}
+.day_container {
+    background: linear-gradient(#f2e8c6, #f39ce5) padding-box,
+                linear-gradient(135deg, #c0273b, #ffffff) border-box;
+    border: solid 3px transparent;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.proverb_box {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.proverb_expl {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease;
+    margin-top: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: #161612;
+    font-size: 0.95rem;
+}
+.day_container:hover .proverb_expl {
+    opacity: 1;
+    transform: translateY(0);
+}
+.details {
+    background: linear-gradient(#f2e8c6, #f39ce5) padding-box,
+                linear-gradient(135deg, #ffffff, #c0273b) border-box;
+    border: solid 3px transparent;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    justify-items: center;
+    padding: 15px;
+    margin: 10px;
+}
+.back-button {
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 3px #800000;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    height: 30px;
+    width: 100px;
+    cursor: pointer;
+    text-decoration: none;
+    background-color: #800000;
+    color: #fce1e8;
+    padding-top: 0.3rem;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+a:hover {
+    transform: scale(1.1);
+}
+.contact {
+    border: #c0273b 3px solid;
+    padding: 0.3rem;
+    border-radius: 10px;
+}
